@@ -8,8 +8,8 @@ def health_check():
     return {
         "status": "healthy",
         "service": "Chargebee SaaS Monitoring API",
-        "region": os.getenv("AWS_REGION", "us-east-1"),
-        "deployment_type": "AWS Native App Runner (No Container Setup)"
+        "deployment_platform": "Render Cloud Infrastructure",
+        "auto_deploy": True
     }
 
 @app.get("/metrics")
